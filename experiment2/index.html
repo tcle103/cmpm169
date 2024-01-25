@@ -31,30 +31,52 @@
 			<h1>Experiment 2 - Vector Art, Animation, & Interactivity</h1>
 			<div class="minor-section">
 				<h2>Imitate</h2>
-				<p>To develop artistic creativity in coding, it can be helpful to start by studying and learning from existing examples. This might involve reviewing code written by others, analyzing successful techniques, or even copying and modifying code to better understand how it works. By imitating and learning from existing techniques and strategies, we can gain a better understanding of what has been done before and what is possible, and identify opportunities for improvement and innovation.</p>
-				<p>What code did you start with? (You don't need to provide the code itself, but where did you start?) Document this step briefly.</p>
+				<p>
+					I was inspired by a piece I found on Open Processing - <a href="https://openprocessing.org/sketch/2131934">Arcs by NCLCRW</a>! It seemed simple at first, but when I sat down and thought about it, 
+					making something move in a circular pattern was a bit puzzling. So I decided to try and figure that out!<br><br>
+					I tried a variety of implementations to get one that would work with my needs; while I had been trying to smooth over and get control over a sort of "easing" effect I observed in my first demo,
+					I end up being inspired by that effect to make a pendulum! My final implementation uses an equation I got from Krom Stern's clever <a href="https://gamedev.stackexchange.com/a/9610">Stack Exchange answer here</a>.<br><br>
+					You can find the demos I developed for this step here:
+					<ul>
+						<li><a href="https://editor.p5js.org/ticale/sketches/rx4kD2SWn">circle demo 1</a></li>
+						<li><a href="https://editor.p5js.org/ticale/sketches/teg9J9Tcq">circle demo 2</a></li>
+					</ul>
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Integrate</h2>
-				<p>After learning from existing techniques and strategies, we can build upon that foundation by combining elements from different sources. This might involve combining elements from different programming languages, using libraries or frameworks in new ways, or bringing together techniques from different fields or disciplines. By integrating and combining elements from different sources, we can create something new and unique.</p>
-				<p>How did you extend the code or combine with another technique to make something new? Document this step.</p>
+				<p>
+					After making that demo work out, I wanted to make a method that felt more natural for p5.js; I wanted to make it more p5.js-ic, if you will (... like how people say Pythonic). <br><br> 
+					To do that, I wanted to place the circle using translations versus drawing the circle at different points within a stationary canvas. That just seemed like it would more take advantage of how p5.js worked, 
+					as well as allow me to easily use other translation techniques to modify the traveling object - such as rotation!<br><br>
+					Additionally, I wanted to make a dolphin perpetual motion toy in particular, so I set out to figure out how to make a dolphin travel the circular path. To do this, I had to figure out how to draw complex shapes within p5.js, 
+					which I primarily did by combining primitives! I think they turned out really cute! :D <br><br>
+					I had some trouble with combining the custom shape with rotation at first, but it worked great when I flipped my dolphin upside down! Yay!<br><br>
+					Demos:
+					<ul>
+						<li><a href="https://editor.p5js.org/ticale/sketches/n0rw_jkb7">orbiting demo</a></li>
+						<li><a href="https://editor.p5js.org/ticale/sketches/VzsK0hBiL">dolphin source</a></li>
+						<li><a href="https://editor.p5js.org/ticale/sketches/7OhXnyRfd">dolphin spinning!! (swimming??)</a></li>
+					</ul></p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Innovate</h2>
-				<p>Finally, we can introduce new or original ideas to our coding process by thinking creatively and pushing the boundaries. This might involve developing entirely new techniques or approaches, or using existing techniques in new and creative ways. By innovating and introducing new ideas, we can create art that is truly groundbreaking.</p>
-				<p>How did you use the code as a jumping off point to create something truly unique and novel? Document this step thoroughly.</p>
+				<p>
+					Now that I had a hold of the techniques I was going to use, it was time to construct my pendulum! I drew the pendulum using my newfound p5.js vector skills, 
+					used some ideas I had developed in Imitate and Integrate to simulate some pendulum physics, then finally added mousePress interactivity!<br><br>
+					I had quite a few troubles with managing desync and such, but in the end it worked out and I'm happy with how it turned out!<br><br>
+					You can check out my final script <a href="https://editor.p5js.org/ticale/sketches/3RXZqsLw9">here</a>... or right below in Results!
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment. Here's where you can put your reflections.</p>
-				<ul>
-					<li>What part of the project you contributed</li>
-					<li>A reflection on your work and the work of the team</li>
-					<li>Brief highs and lows</li>
-				</ul>
+				<p>I’m pretty happy with the final result! I think it’s pretty cute, and even though it’s not a “real” physics simulation, it’s convincing enough to be entertaining. I do think I totally underestimated how long it takes to complete an experiment like this - it was a lot of effort, and making an interactive pendulum toy was a lot more complex than I had initially thought.<br><br> 
+					Once, a friend of mine told me that there were certain tasks that would just always expand to fit the time you allot 
+					it…I definitely think coding is one of those things, and I always find myself saying that I should start earlier. <br><br>
+					Even then, I had a lot of fun! I’m excited for the next experiment!</p>
 			</div>
 
 			<div class="minor-section">
@@ -67,6 +89,9 @@
 		</section>
 		<nav id="links">
 			<!-- Put links to other pages (including the homepage) here. -->
+			<ul>
+				<li><a href="../index.html">Homepage</a></li>
+			</ul>
 		</nav>
 	</main>
 </body>
