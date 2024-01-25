@@ -17,7 +17,16 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     width: 100%px;
     height: 400px;
+}
+
+#instructions {
+    height: 140px;
+    width: 300px;
+    border: solid 1px #A0A0A0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }

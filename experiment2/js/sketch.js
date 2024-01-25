@@ -99,12 +99,12 @@ function setup() {
     angleMode(DEGREES);
     frameRate(30);
 
-    $("#canvas-container").append(`<p>
+    $("#canvas-container").append(`<div id="instructions"><p>
     <b>Instructions</b><br><br>
     Click to spin! <br>
     Mouse X - determines direction of spin <br>
     Mouse Y - determines strength of spin
-    </p>`);
+    </p></div>`);
 
     d1 = new Dolphin(90);
     d2 = new Dolphin(270);
